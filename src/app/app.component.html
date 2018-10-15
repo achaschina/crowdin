@@ -1,20 +1,44 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" routerLink='/'>
+    <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE3LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAzNy45IDI2LjkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDM3LjkgMjYuOSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzMDY2MEYiIGQ9Ik0zNS4xLDQuNmMwLDAtMjIuMS0yLjQtMjQuMyw3LjRDNy42LDI2LjIsMjEuNSwyMywyMS41LDIzCgkJUzIuNiwzMS4xLDQuNiwxMi4zQzYtMC41LDMwLjksMi42LDM1LjEsNC42TDM1LjEsNC42eiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiMzMDY2MEYiIGQ9Ik0zMy4yLDkuN2MwLDAtMTAtMC4xLTEwLjYsNC4yYy0wLjksNi4zLDUuMiw0LjMsNS4yLDQuMwoJCXMtOC4yLDQuMy04LTMuOUMxOS45LDguNywzMS4yLDksMzMuMiw5LjdMMzMuMiw5Ljd6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iIzMwNjYwRiIgZD0iTTMzLjQsNy4xYzAsMC0xNS4xLTAuMi0xNi4xLDYuNGMtMS4zLDkuNSw3LjksNi41LDcuOSw2LjUKCQlzLTEyLjMsNi41LTEyLjEtNkMxMy4zLDUuNiwzMC40LDYuMSwzMy40LDcuMUwzMy40LDcuMXoiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjQjhDQzFDIiBkPSJNMjcuOCwxOC4zYzAsMC04LDQuMi04LjctM2MxLDAuMSwxLjksMC4zLDIuOCwwLjMKCQlDMjIuMywyMC44LDI3LjgsMTguMywyNy44LDE4LjNMMjcuOCwxOC4zeiIvPgoJPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9IiNCOENDMUMiIGQ9Ik0yMi4xLDEzLjFjLTAuMSwwLjMtMC4yLDAuOS0wLjMsMS4yYy0xLjctMC4yLTEsMC0yLjgtMC4zCgkJYzAtMC4xLDAuMS0wLjcsMC4xLTAuOGMxLTUuMSwxMi4yLTQuMSwxNC0zLjRDMzMuMiw5LjcsMjMuMiw4LjksMjIuMSwxMy4xTDIyLjEsMTMuMXoiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjQjhDQzFDIiBkPSJNMjUuMiwyMC4xYzAsMC0xMi4xLDYuNC0xMy4xLTQuNmMxLjUsMC4yLDIuOSwwLjQsNC4yLDAuNAoJCUMxNi45LDIzLjksMjUuMiwyMC4xLDI1LjIsMjAuMUwyNS4yLDIwLjF6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0I4Q0MxQyIgZD0iTTE2LjcsMTIuM2MtMC4xLDAuNC0wLjMsMS40LTAuNCwxLjdjLTIuNi0wLjMtMi40LTAuMi00LjMtMC41CgkJYzAtMC4yLDAuMS0xLjEsMC4xLTEuM2MxLjUtNy43LDE4LjUtNi4yLDIxLjMtNS4xQzMzLjQsNy4xLDE4LjMsNS45LDE2LjcsMTIuM0wxNi43LDEyLjN6Ii8+Cgk8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0I4Q0MxQyIgZD0iTTIxLjMsMjNjMCwwLTE4LjUsNy45LTE4LjUtOC43YzIuMSwwLjYsNC4xLDEsNi4xLDEuMgoJCUM4LjgsMjcuNiwyMS4zLDIzLDIxLjMsMjNMMjEuMywyM3oiLz4KCTxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjQjhDQzFDIiBkPSJNMTAsMTBjLTAuMiwwLjYtMC43LDItMC44LDIuNmMtMy43LTAuOC0yLjgtMC41LTYuMi0xLjMKCQlDMy4xLDExLDMuMyw5LjYsMy40LDkuNEM2LjYtMiwzMS4yLDIuNiwzNS4xLDQuNkMzNS4xLDQuNiwxMy4zLDAuNiwxMCwxMEwxMCwxMHoiLz4KPC9nPgo8L3N2Zz4K"
+      width="40" height="40" alt="">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Проекты
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a *ngFor="let project of projects" 
+              class="dropdown-item"
+              (click)="getCurrentProject(project)"
+              routerLink= '/projects/{{ project.id }}'>
+              {{ project.name }}</a>
+          <a class="dropdown-item" routerLink='/profile'>Все проекты</a>
+          <div class="dropdown-divider"></div>
+          <button type="button" class="btn btn-dark btn-create" routerLink='/new-project'> Создать проект</button>
+        </div>
+      </li>
+    </ul>
+    <a class="nav-link" id="userDropdown" role="button" aria-haspopup="true" routerLink='/profile'>
+      <img src="../assets/images/user-picture.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    </a>
+  </div>
+</nav>
+<div class="divider"></div>
+<div class="container-fluide">
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
